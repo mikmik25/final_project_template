@@ -523,12 +523,12 @@ Graph
 }
 
 .type {
-  animation: slideUp 1s 1 ease-in-out;
+  animation: slideUp 1.5s 1 ease-in-out;
   animation-direction: alternate;
 }
 
 .menu {
-  animation: slideUp 1.5s 1 ease-in-out;
+  animation: slideUp 1.7s 1 ease-in-out;
   animation-direction: alternate;
 }
 
@@ -746,7 +746,7 @@ input:focus {
 }
 
 footer {
-  background-color: #cdf3f6;
+  background-color: #89cfe1;
   overflow: auto;
   text-align: center;
 }
@@ -988,6 +988,10 @@ footer a {
   }
 
   @media screen and (max-width: 500px) {
+
+    .bot {
+      display: block;
+    }
 
     .hamburger {
       display: block;

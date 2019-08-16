@@ -31,11 +31,12 @@ function scrollAnimate () {
     if( distanceScrolled > aboutSection){
     $('.one').addClass('slide-right');
     $('.two').addClass('slideDown');
+    $('[class^="bar"]').addClass('animated');
+    $('.graph').addClass('slide-left');
 }
   if( distanceScrolled > graph){
-  $('[class^="bar"]').addClass('animated');
-  $('.graph').addClass('slide-left');
-  $('.graph').offset().top - 300;
+  $('.graph').offset().top + 700;
+  console.log(graph);
 }
   if( distanceScrolled > portfolio){
     $('.gallery').css('opacity' , '1');
