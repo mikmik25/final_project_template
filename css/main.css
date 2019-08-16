@@ -1,0 +1,197 @@
+/* --------------------------------------------------------------------------
+Base styles:
+----------------------------------------------------------------------------- */
+/* Fix to include padding and border in the total width for each element */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fix for responsive images */
+img {
+  max-width: 100%;
+}
+
+/* ---- main ----- */
+
+body {
+  font-family: 'DM Serif Text';
+  color: #2b5c83;
+
+  /* background-image: url('../img/bg.png');
+  background-attachment: scroll;
+  background-position: left top;
+  background-repeat: no-repeat; */
+
+}
+
+header {
+  display: inline-flex;
+  background-color: #73e2ff;
+}
+
+section {
+  position: relative;
+}
+
+/* ---- navigation  ----- */
+
+nav a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #2b5c83;
+}
+
+nav {
+  display: inline;
+  text-align: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #89cfe1;
+  padding: 25px 0px 30px 137px;
+  word-spacing: 20px;
+  z-index: 1;
+}
+
+.hamburger {
+  font-size: 30px;
+  display: none;
+}
+
+/* ----- social links ------ */
+
+.social {
+  display: inline-flex;
+  padding-left: 1125px;
+  position: fixed;
+  margin-top: 2px;
+  z-index: 1;
+}
+
+.social i {
+  padding-left: 100px;
+  font-size: 50px;
+  color: #2b5c83;
+}
+
+.social i:hover {
+  color: #6c99c1;
+}
+
+/* ---- Start of Page ----- */
+
+aside {
+  font-size: 60px;
+  margin-left: 1237px;
+  margin-top: 248px;
+}
+
+aside a {
+  text-decoration: none;
+  color: #2b5c83;
+  padding-left: 30px;
+}
+
+/* ------styles------- */
+
+h2 {
+  padding: 305px 0px 0px 252px;
+  font-size: 80px;
+  color: white;
+  position: absolute;
+  z-index: 0;
+}
+
+h1 {
+  font-size: 68px;
+  padding-left: 620px;
+  position: fixed;
+  margin: auto;
+  top: -10px;
+  font-family: "Oswald";
+  z-index: 1;
+}
+
+h3 {
+  margin-top: 600px;
+  margin-left: 20px;
+  font-size: 70px;
+  border-bottom: 2px solid;
+}
+
+/* slide effect on menu */
+.slide {
+  width: 600px;
+  height: auto;
+  overflow: visible;
+  display: block;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, #fff 50%, #619ac5 50%);
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+.slide:hover {
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  /** START THE FINAL STATE STYLING **/
+  background-position: bottom right;
+  color: #fff;
+}
+
+/* ----------------------------------------
+SECTION
+------------------------------------------- */
+article img {
+  height: 500px;
+  object-fit: contain;
+  margin-left: 20px;
+
+}
+
+article p {
+  position: relative;
+  left: 375px;
+  bottom: 534px;
+  width: 300px;
+}
+
+/* article p {
+  margin-left: 400px;
+  height: 200px;
+  width: 400px;
+}
+*/
+
+/* ----media screens----- */
+
+@media screen and (max-width: 1040px) {
+
+  .hamburger {
+    display: block;
+    margin-right: 800px;
+    text-decoration: none;
+  }
+
+  nav a,
+  h1,
+  .social {
+    display: none;
+  }
+
+}
+
+
+@media screen and (max-width: 550px) {
+  body {
+    background-position: fixed;
+  }
