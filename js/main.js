@@ -50,13 +50,20 @@ function scrollAnimate () {
 
 scrollAnimate();
 
-// when click fa-arrow-up, scroll to Top
-// about page is 545, portfolio is 1395, contact is 2263
 $('.hamburger').on('click', function(event) {
   $('.side-nav').fadeIn(300);
+  // $('.hamburger').fadeOut(300);
 });
 
+$('#About').on('click', function() {
+  $('.side-nav').fadeOut(300);
+});
 
+$('.close').on('click', function(e){
+  e.preventDefault();
+  $('.side-nav').fadeOut(300);
+  $('.hamburger').fadeIn(300);
+});
 
 var swiper = new Swiper('.swiper-container', {
       navigation: {
