@@ -46,6 +46,7 @@ html {
   overflow-x: hidden;
 }
 
+
 /* Fix for responsive images */
 img {
   max-width: 100%;
@@ -56,6 +57,7 @@ body {
   color: #2b5c83;
   max-width: 100%;
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* ---------------------
@@ -141,6 +143,7 @@ nav a,
   display: none;
   padding-bottom: 9%;
   top: 0;
+  left: 0;
   height: 100%;
 }
 
@@ -394,10 +397,7 @@ Graph
   overflow: hidden;
 }
 
-.bar8.animated {
-  animation: stagger .7s 1 ease-in-out;
-  animation-direction: alternate;
-}
+
 
 .bar7.animated {
   animation: stagger .8s 1 ease-in-out;
@@ -506,11 +506,6 @@ Graph
   max-width: 40%;
 }
 
-.bar8::after {
-  text-align: end;
-  content: '20%';
-  max-width: 20%;
-}
 
 /* --------------------------------------------------------------------------
      gallery
@@ -575,9 +570,8 @@ Graph
 
 .slider {
   transform: translateY(-100%);
-  /* or can use -100%*/
   transition: all .4s ease-in-out;
-  oveflow: hidden;
+  overflow: hidden;
 }
 
 .overlay-wrapper-sliding:hover .slider {
@@ -761,6 +755,7 @@ input:focus {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+
 }
 
 footer {
@@ -925,7 +920,7 @@ footer a {
   .nav-wrapper,
   .main-nav,
   .social {
-    max-height: 11.7%;
+    max-height: 12.4%;
     padding: 0;
     max-width: 100%;
     justify-content: normal;
@@ -1006,6 +1001,17 @@ footer a {
   }
 
   @media screen and (max-width: 500px) {
+    .modal-popup {
+      width: 100%;
+      z-index: 20;
+      top: 20%;
+      bottom: 20%;
+      left: 0%;
+    }
+
+    header {
+      background-image: url('../img/mobiletest.jpg');
+    }
 
     .bot {
       display: block;
@@ -1016,7 +1022,11 @@ footer a {
     }
 
     h4 {
-      left: 137%;
+      left: 85%;
+    }
+
+    h3 {
+      padding-left: 12px;
     }
 
     h1 {
@@ -1024,12 +1034,13 @@ footer a {
     }
 
     h2 {
-      top: 205px;
-      left: 62px;
+      top: 177px;
+      left: 26px;
+      font-size: 78px
     }
 
     .side-menu {
-      left: -27%;
+      left: -51%;
       top: 41%;
     }
 
@@ -1043,8 +1054,8 @@ footer a {
     }
 
     .about img {
-      width: 50%;
-      right: -22%;
+      width: 60%;
+      right: -16.5%;
     }
 
     .one {
@@ -1066,19 +1077,13 @@ footer a {
     .graph {
       width: 85%;
     }
-  }
 
-  /* chnage the nav into a hamburger nav */
-  /*
-.show-mobile {
-  display: none;
-}
+    .contact {
+      left: 9%;
+    }
 
-  @media (max-width: 800px) {
-    .hide-mobile {
-      display: none;
+    input[type=text],
+    select,
+    textarea {
+      width: 77%;
     }
-    .show-mobile {
-      display: block;
-    }
-  } */

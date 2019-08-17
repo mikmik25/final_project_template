@@ -52,12 +52,9 @@ scrollAnimate();
 
 $('.hamburger').on('click', function(event) {
   $('.side-nav').fadeIn(300);
-  // $('.hamburger').fadeOut(300);
+  $('.hamburger').fadeOut(300);
 });
 
-$('#About').on('click', function() {
-  $('.side-nav').fadeOut(300);
-});
 
 $('.close').on('click', function(e){
   e.preventDefault();
