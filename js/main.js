@@ -1,3 +1,9 @@
+$(window).scroll(function () {
+  scrollAnimate();
+});
+$(window).on('resize', function () {
+  scrollAnimate();
+});
 
 $(window).scroll(function(){
   var distanceScrolled = $(window).scrollTop();
@@ -13,14 +19,6 @@ $('#toTop').on('click', function(){
    $("html, body").scrollTop({scrollTop: 0}, 800);
 });
 
-// when scroll to #about, .two .part2 and .graph will animated
-
-$(window).scroll(function () {
-  scrollAnimate();
-});
-$(window).on('resize', function () {
-  scrollAnimate();
-});
 
 function scrollAnimate () {
   var distanceScrolled = $(window).scrollTop();
@@ -55,6 +53,10 @@ $('.hamburger').on('click', function(event) {
   $('.hamburger').fadeOut(300);
 });
 
+$('.side-nav a').on('click',function(event){
+  $('.side-nav').fadeOut(600);
+  $('.hamburger').fadeIn(400);
+})
 
 $('.close').on('click', function(e){
   e.preventDefault();
