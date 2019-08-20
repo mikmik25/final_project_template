@@ -350,6 +350,7 @@ h3 {
 .two {
   transform: translateY(-100%);
   overflow: hidden;
+  overflow-y: hidden;
   transition: all 1.5s ease-in-out;
   opacity: 0;
 }
