@@ -47,13 +47,20 @@ function scrollAnimate () {
 
 scrollAnimate();
 
+
 $('.hamburger').on('click', function(event) {
   $('.side-nav').toggleClass('active');
 });
 
-$('.close').on('click', function(){
+$('.side-nav a').on('click',function(event){
+  $('.side-nav').removeClass('active');
+  $('.hamburger').fadeIn(400);
+});
+
+$('.close').on('click', function(event){
   $('.side-nav').removeClass('active');
 });
+
 
 var swiper = new Swiper('.swiper-container', {
       navigation: {
