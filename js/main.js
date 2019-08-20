@@ -34,7 +34,6 @@ function scrollAnimate () {
 }
   if( distanceScrolled > graph){
   $('.graph').offset().top + 700;
-  console.log(graph);
 }
   if( distanceScrolled > portfolio){
     $('.gallery').css('opacity' , '1');
@@ -49,19 +48,11 @@ function scrollAnimate () {
 scrollAnimate();
 
 $('.hamburger').on('click', function(event) {
-  $('.side-nav').fadeIn(300);
-  $('.hamburger').fadeOut(300);
+  $('.side-nav').toggleClass('active');
 });
 
-$('.side-nav a').on('click',function(event){
-  $('.side-nav').fadeOut(600);
-  $('.hamburger').fadeIn(400);
-})
-
-$('.close').on('click', function(e){
-  e.preventDefault();
-  $('.side-nav').fadeOut(300);
-  $('.hamburger').fadeIn(300);
+$('.close').on('click', function(){
+  $('.side-nav').removeClass('active');
 });
 
 var swiper = new Swiper('.swiper-container', {
