@@ -720,16 +720,20 @@ Graph
   width: 43%;
   padding-bottom: 1%;
   font-size: 25px;
+  margin-top: 20%;
 }
 
-.content {
-  font-size: 15px;
-  color: black;
-  margin: 0% 2%;
+.gallery button:hover {
+  color: #ffffff;
+  background: #7bbaca;
+  border-color: black;
+  transition: all 0.4s ease 0s;
+
 }
 
 .title {
   margin: 7%;
+  padding-top: 5%;
 }
 
 /* --------------------------------------------------------------------------
