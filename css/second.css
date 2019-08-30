@@ -48,7 +48,7 @@ Base styles:
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  width: 100%;
+  width: 100%x;
   height: 100%;
 }
 
@@ -722,7 +722,7 @@ Graph
   width: 43%;
   padding-bottom: 1%;
   font-size: 25px;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .gallery button:hover {
@@ -1395,6 +1395,24 @@ footer a {
     width: 85%;
   }
 
+}
+
+@media screen and (max-width: 414px) {
+  h2 {
+    left: 12%;
+  }
+
+  h4 {
+    left: 109%;
+  }
+
+  .side-menu {
+    left: -33%;
+  }
+
+  .bot {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 375px) {
