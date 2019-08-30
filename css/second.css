@@ -48,6 +48,8 @@ Base styles:
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 
