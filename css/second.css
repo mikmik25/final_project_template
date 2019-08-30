@@ -782,6 +782,10 @@ Graph
   background-color: white;
 }
 
+.modal-text p {
+  color: black;
+}
+
 .CSS img {
   max-height: 95%;
 }

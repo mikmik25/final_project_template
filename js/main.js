@@ -22,7 +22,7 @@ $('#toTop').on('click', function(){
 
 function scrollAnimate () {
   var distanceScrolled = $(window).scrollTop();
-  var aboutSection = 480;
+  var aboutSection = 400;
   var portfolio = 1300;
   var graph = 1500;
   var contact = 2230;
