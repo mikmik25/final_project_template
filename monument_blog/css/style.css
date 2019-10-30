@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway:600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Raleway';
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+a {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding-bottom: 130px;
+}
+
+main {
+  color: #44545e;
+}
+
+hr {
+  color: black;
+  height: 2px;
+}
+
+
+/* ----------------------------------------
+Typography
+------------------------------------------- */
+main a {
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+  padding: 10px 30px 10px 30px;
+  color: #7B98AA;
+}
+
+/* momument titel*/
+h3 {
+  font-size: 37px;
+  letter-spacing: 20px;
+}
+
+h1 {
+  font-size: 23px;
+  padding-top: 130px;
+}
+
+h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+p {
+  font-family: 'Lato';
+  font-size: 15px;
+  margin: 30px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.one {
+  padding-bottom: 30px;
+}
+
+.two {
+  padding-bottom: 29px;
+}
+
+/* ----------------------------------------
+Header
+------------------------------------------- */
+
+header {
+  background-image: url('../images/home_header_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 80vh;
+  display: block;
+  color: white;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header h1 {
+  padding: 0 !important;
+}
+
+nav {
+  word-spacing: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 100;
+  padding: 15px 20px 15px 20px;
+}
+
+nav a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #7B98AA;
+  font-weight: bold;
+  transition: all 300ms;
+}
+
+a:hover {
+  color: #A9A9A9;
+  font-style: italic;
+}
+
+/* hover affect for social icons */
+i:hover {
+  color: #A9A9A9;
+}
+
+/* ----------------------------------------
+Articles
+------------------------------------------- */
+article img {
+  padding-top: 20px;
+}
+
+article p {
+  margin: 10px 10px 50px 10px;
+  padding: 10px;
+
+}
+
+
+/* ----------------------------------------
+About
+------------------------------------------- */
+
+.about {
+  background-color: #C8F0F4;
+  height: 500px;
+}
+
+.about p {
+  padding: 0px 400px 60px 400px;
+}
+
+
+
+/* ----------------------------------------
+Gallery
+------------------------------------------- */
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px 200px 60px 200px;
+}
+
+.bottom img:hover {
+  opacity: .7;
+  transition: opacity .2s ease-out;
+  -moz-transition: opacity .2s ease-out;
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+}
+
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+
+footer {
+  overflow: auto;
+  text-align: center;
+  background-color: #CDF3F6;
+  font-family: 'Lato';
+  font-size: 15px;
+  font-weight: 400;
+}
+
+footer .wrap {
+  padding: 30px 15px;
+}
+
+
+.social-links a {
+  font-size: 30px;
+  padding: 15px;
+  margin-bottom: 30px;
+  display: inline-block;
+  color: #44545e;
+}
+
+input {
+  margin-bottom: 12px;
+  margin-right: 30px;
+  padding: 11px 10px;
+  outline: 0;
+  width: 300px;
+  border: 0;
+  text-align: center;
+}
+
+button {
+  border: 2px solid #44545e;
+  color: #44545e;
+  padding: 8px 25px;
+  background-color: transparent;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #A9A9A9;
+  color: black;
+  font-weight: 600;
+}
