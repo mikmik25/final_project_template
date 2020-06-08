@@ -790,6 +790,7 @@ Graph
 
 .CSS img {
   max-height: 95%;
+  z-index: 19;
 }
 
 .Photography img {
